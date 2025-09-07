@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Earth</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind + daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <!-- Navbar starts here-->
+        <div class="navbar bg-[#15803D] shadow-sm text-white">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
+                        <li>
+                            <a href="" class="inter-font font-medium text-[#15803D]">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="inter-font font-medium text-[#15803D]">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="" class="inter-font font-medium text-[#15803D]">Plant a Tree</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="btn btn-ghost text-xl font-semibold inter-font hover:bg-[#15803D] hover:text-white hover:border-none hover:shadow-none">
+                    <span><img src="./assets/logo.png" alt="" class="w-7 h-7"></span>
+                    Green Earth</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li>
+                        <a href="" class="inter-font font-medium ">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="inter-font font-medium ">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="" class="inter-font font-medium ">Plant a Tree</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button
+                    class="btn border-none shadow-none bg-[#facc15] text-[#15803D] hover:bg-[#DCFCE7]  rounded-full btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">
+                    Plant a Tree
+                </button>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
