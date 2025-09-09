@@ -104,21 +104,58 @@
     <!-- main section -->
     <main>
 
-        <!-- trees section -->
-        <section class="mt-[50px] md:mt-[100px]">
-            <h1 class="font-semibold text-2xl inter-font text-[#1F2937] text-center mb-10">Choose Your Trees</h1>
-
-            <!-- categories section start here -->
-            <div id="categories-parent">
-
-                <div>
-
-                </div>
-            </div>
-
+        <!-- spinner -->
+        <section id="spinner" class="flex justify-center items-center py-10 hidden">
+            <span class="loading loading-dots loading-xl"></span>
         </section>
 
 
+        <!-- tree section -->
+        <section class="mt-[50px] md:mt-[100px]">
+            <h1 class="font-semibold text-[32px] inter-font text-[#1F2937] text-center mb-10">Choose Your Trees</h1>
+
+            <div class="choose-trees-parent grid md:grid-cols-5 gap-4 px-10 md:px-4">
+
+                <div class="space-y-2 p-3 bg-[#F0FDF4] inter-font">
+                    <h2 class="font-semibold text-xl mb-4">Categories</h2>
+
+                    <!-- category -->
+                    <div id="category-container">
+
+                    </div>
+                </div>
+
+                <!-- card container -->
+                <div id="card-container" class="col-span-3 grid md:grid-cols-3 gap-3 ">
+
+                </div>
+
+                <!-- your cart container -->
+                <div id="your-cart-container" class="p-4 rounded-2xl space-y-2 shadow-md bg-white inter-font">
+                    <h1 class="font-semibold text-xl">Your Cart</h1>
+
+                </div>
+
+            </div>
+
+
+            </div>
+        </section>
+
+        <!-- modal -->
+        <dialog id="tree_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="details-container" class="space-y-5">
+
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
 
         <!-- About the Campaign -->
         <section class="mt-[50px] md:mt-[100px]">
@@ -190,14 +227,18 @@
 
             </div>
         </section>
+
+
     </main>
 
     <!-- footer section  -->
     <footer class="bg-[#14532D]">
         <div class="py-6">
-            <p class="text-white text-center">&copy; 2025 Green Earth. All Rights Reserved.</p>
+            <p class="text-white text-center">&copy; 2025 Green Earth. All Rights Reserved. Mohammad Arman</p>
         </div>
     </footer>
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>
